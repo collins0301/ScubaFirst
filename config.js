@@ -6,10 +6,10 @@ window.SCUBA_FIRST_CONFIG = {
 
   // Add these when you are ready. The site works without them, but inquiry/payment
   // buttons will route visitors to social messaging until the links are supplied.
-  inquiryFormEndpoint: "", // Example: your Formspree endpoint
+  inquiryFormEndpoint: "https://formsubmit.co/ajax/russell.scubafirst@gmail.com",
   phoneDisplay: "",
   phoneLink: "",
-  email: "",
+  email: "russell.scubafirst@gmail.com",
 
   paymentLinks: {
     padiOpenWater: "",
