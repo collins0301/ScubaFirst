@@ -20,7 +20,7 @@ window.SCUBA_FIRST_CONFIG = {
   },
 
   pricing: {
-    padiOpenWater: "$500",
-    sdiOpenWater: "$425"
+    padiOpenWater: "$525",
+    sdiOpenWater: "$500"
   }
 };
