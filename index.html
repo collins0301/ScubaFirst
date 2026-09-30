@@ -61,6 +61,181 @@ a{color:inherit}
 .modal{border:0;padding:0;border-radius:24px;width:min(680px,calc(100% - 28px));box-shadow:0 35px 110px rgba(0,0,0,.35)}.modal::backdrop{background:rgba(1,13,22,.74);backdrop-filter:blur(4px)}.modal-shell{padding:34px;position:relative}.modal-shell h2{font-size:2.1rem;line-height:1.05;margin:0 0 10px}.modal-intro{color:var(--muted)}.modal-close{position:absolute;right:18px;top:15px;border:0;background:#eef3f5;width:36px;height:36px;border-radius:50%;font-size:1.4rem;cursor:pointer}.signup-options{display:grid;gap:10px;margin-top:23px}.signup-option{border:1px solid var(--line);border-radius:15px;background:#fff;padding:16px;display:flex;justify-content:space-between;align-items:center;text-align:left;cursor:pointer}.signup-option:hover{border-color:#5acbc8;background:#f0fbfa}.signup-option b,.signup-option small{display:block}.signup-option small{color:var(--muted);margin-top:3px}.signup-option strong{color:#087488}.modal-note{min-height:22px;color:#8a520e;font-size:.86rem}.info-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.info-form label{font-size:.85rem;font-weight:800}.info-form label span{font-weight:500;color:var(--muted)}.info-form input,.info-form select,.info-form textarea{display:block;width:100%;margin-top:6px;border:1px solid #b9c9cf;border-radius:11px;padding:12px;background:#fff}.info-form .full{grid-column:1/-1}.form-actions{display:flex;align-items:center;gap:14px}.social-fallback{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:15px;flex-wrap:wrap}.social-fallback a{font-weight:900;color:#087488}
 @media (max-width:980px){.video-grid{grid-template-columns:1fr}.video-card{max-width:620px;margin:auto;width:100%}.hero-grid,.split,.future-grid,.faq-wrap,.cta-grid,.instructor-grid,.youth-grid{grid-template-columns:1fr}.hero-grid{gap:42px}.course-grid,.steps-grid{grid-template-columns:1fr 1fr}.statement-card{position:static}.social-heading{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr 1fr}.hero-card{max-width:620px}.faq-wrap{gap:20px}}
 @media (max-width:760px){.container{width:min(100% - 28px,1160px)}.site-header .brand span{font-size:.9rem}.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#061b2c;padding:22px 18px;flex-direction:column;align-items:stretch;border-top:1px solid rgba(255,255,255,.1)}.nav-links.open{display:flex}.nav-links .button{width:100%}.hero{padding:62px 0 90px}.hero h1{font-size:clamp(3.2rem,16vw,5rem)}.section{padding:72px 0}.course-grid,.steps-grid,.social-grid,.future-cards{grid-template-columns:1fr}.social-buttons{width:100%;display:grid;grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr}.legal{flex-direction:column}.info-form{grid-template-columns:1fr}.info-form .full{grid-column:1}.trust-row{gap:12px}.hero-actions{display:grid;grid-template-columns:1fr}.hero-actions .button{width:100%}.price-grid{grid-template-columns:1fr 1fr}.modal-shell{padding:28px 20px}.signup-option{gap:14px}}
+
+/* SCUBA-THEMED BACKGROUND PASS — visual only; no content changes */
+body{
+  background:
+    radial-gradient(circle at 12% 8%,rgba(67,214,208,.06),transparent 17%),
+    radial-gradient(circle at 88% 20%,rgba(13,120,147,.05),transparent 19%),
+    linear-gradient(180deg,#ffffff 0%,#fbfeff 100%);
+}
+.hero{
+  background:
+    radial-gradient(circle at 80% 18%,rgba(67,214,208,.24),transparent 27%),
+    radial-gradient(circle at 15% 12%,rgba(255,255,255,.09),transparent 15%),
+    linear-gradient(165deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,0) 22%),
+    linear-gradient(145deg,#03131f 0%,#07334b 43%,#0a637b 73%,#15999f 100%);
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.7;
+  background:
+    linear-gradient(112deg,rgba(255,255,255,.10) 0 2%,transparent 12% 20%,rgba(255,255,255,.035) 29%,transparent 40%),
+    radial-gradient(circle at 17% 28%,rgba(255,255,255,.10) 0 2px,transparent 3px),
+    radial-gradient(circle at 24% 61%,rgba(255,255,255,.08) 0 3px,transparent 4px),
+    radial-gradient(circle at 70% 23%,rgba(255,255,255,.09) 0 2px,transparent 3px),
+    radial-gradient(circle at 84% 49%,rgba(255,255,255,.07) 0 4px,transparent 5px),
+    radial-gradient(circle at 65% 73%,rgba(255,255,255,.07) 0 2px,transparent 3px);
+}
+.hero>.container,.why-section>.container,.youth-section>.container,.cta-section>.container{position:relative;z-index:1}
+
+.path-section{
+  background:
+    radial-gradient(circle at 8% 11%,rgba(67,214,208,.09),transparent 16%),
+    radial-gradient(circle at 92% 18%,rgba(13,120,147,.06),transparent 18%),
+    radial-gradient(circle at 82% 82%,rgba(67,214,208,.045) 0 3px,transparent 4px),
+    linear-gradient(180deg,#ffffff 0%,#f6fcfc 100%);
+}
+.course-card{
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(2px);
+}
+.course-card.featured{
+  background:
+    radial-gradient(circle at 92% 12%,rgba(67,214,208,.14),transparent 24%),
+    linear-gradient(160deg,#e7fbf9,#ffffff);
+}
+
+.why-section{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 83% 18%,rgba(67,214,208,.12),transparent 22%),
+    radial-gradient(circle at 18% 78%,rgba(13,120,147,.13),transparent 28%),
+    linear-gradient(160deg,#02111c 0%,#062338 47%,#0a4d63 100%);
+}
+.why-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.55;
+  background:
+    linear-gradient(105deg,rgba(255,255,255,.07) 0 2%,transparent 14% 31%,rgba(255,255,255,.025) 39%,transparent 52%),
+    radial-gradient(circle at 12% 24%,rgba(255,255,255,.07) 0 2px,transparent 3px),
+    radial-gradient(circle at 19% 55%,rgba(255,255,255,.055) 0 3px,transparent 4px),
+    radial-gradient(circle at 89% 34%,rgba(255,255,255,.055) 0 2px,transparent 3px),
+    radial-gradient(circle at 76% 68%,rgba(255,255,255,.05) 0 3px,transparent 4px);
+}
+.statement-card{
+  background:
+    radial-gradient(circle at 88% 14%,rgba(67,214,208,.16),transparent 25%),
+    linear-gradient(145deg,#0b718b,#08485f);
+}
+
+.instructor-section{
+  background:
+    radial-gradient(circle at 12% 16%,rgba(67,214,208,.10),transparent 19%),
+    radial-gradient(circle at 89% 78%,rgba(13,120,147,.06),transparent 18%),
+    linear-gradient(180deg,#f7fbfb 0%,#eef9f9 100%);
+}
+.instructor-card{
+  background:
+    radial-gradient(circle at 86% 15%,rgba(67,214,208,.17),transparent 24%),
+    linear-gradient(145deg,#041c2d,#0b6077);
+}
+
+.youth-section{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 86% 18%,rgba(67,214,208,.24),transparent 25%),
+    radial-gradient(circle at 12% 78%,rgba(255,255,255,.06),transparent 20%),
+    linear-gradient(135deg,#05293d 0%,#075d73 58%,#0c8993 100%);
+}
+.youth-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.5;
+  background:
+    radial-gradient(circle at 11% 30%,rgba(255,255,255,.08) 0 2px,transparent 3px),
+    radial-gradient(circle at 18% 62%,rgba(255,255,255,.07) 0 4px,transparent 5px),
+    radial-gradient(circle at 76% 27%,rgba(255,255,255,.08) 0 3px,transparent 4px),
+    radial-gradient(circle at 91% 61%,rgba(255,255,255,.06) 0 2px,transparent 3px);
+}
+
+.steps-section{
+  background:
+    radial-gradient(circle at 22% 0%,rgba(255,255,255,.45),transparent 22%),
+    radial-gradient(circle at 88% 88%,rgba(67,214,208,.07),transparent 20%),
+    linear-gradient(180deg,#f4f7f2 0%,#eaf5f3 100%);
+}
+.step{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(67,214,208,.06),transparent 24%),
+    #fff;
+}
+
+.social-section{
+  background:
+    radial-gradient(circle at 13% 18%,rgba(67,214,208,.17),transparent 21%),
+    radial-gradient(circle at 84% 12%,rgba(13,120,147,.12),transparent 19%),
+    linear-gradient(180deg,#eafafa 0%,#def3f5 100%);
+}
+.video-card{
+  box-shadow:0 14px 42px rgba(3,54,68,.11);
+}
+
+.future-section{
+  background:
+    radial-gradient(circle at 90% 20%,rgba(67,214,208,.10),transparent 18%),
+    radial-gradient(circle at 10% 80%,rgba(13,120,147,.05),transparent 16%),
+    linear-gradient(180deg,#ffffff 0%,#f5fbfb 100%);
+}
+.future-cards>div{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(67,214,208,.07),transparent 23%),
+    linear-gradient(180deg,#f6f4ee,#f1f7f5);
+}
+
+.faq-section{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(67,214,208,.055),transparent 18%),
+    linear-gradient(180deg,#ffffff 0%,#f9fdfd 100%);
+}
+
+.cta-section{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(67,214,208,.20),transparent 20%),
+    radial-gradient(circle at 12% 80%,rgba(255,255,255,.055),transparent 18%),
+    linear-gradient(145deg,#041a2a 0%,#074966 58%,#0b7c8e 100%);
+}
+.cta-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.55;
+  background:
+    linear-gradient(108deg,rgba(255,255,255,.07) 0 2%,transparent 13% 28%,rgba(255,255,255,.025) 38%,transparent 52%),
+    radial-gradient(circle at 16% 31%,rgba(255,255,255,.08) 0 2px,transparent 3px),
+    radial-gradient(circle at 23% 66%,rgba(255,255,255,.065) 0 3px,transparent 4px),
+    radial-gradient(circle at 86% 42%,rgba(255,255,255,.07) 0 2px,transparent 3px);
+}
+
+.site-footer{
+  background:
+    radial-gradient(circle at 88% 0%,rgba(67,214,208,.05),transparent 22%),
+    #03131f;
+}
+
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
   </style>
