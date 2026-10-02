@@ -450,39 +450,38 @@ body{
 }
 
 
-/* JUNIOR DIVER IMAGE — visual only; keeps all youth-section content unchanged */
-.youth-section::after{
-  content:"";
+/* JUNIOR DIVER IMAGE — explicit image so it reliably renders */
+.youth-section{position:relative;overflow:hidden}
+.youth-diver{
   position:absolute;
-  z-index:0;
-  left:max(0px,calc(50% - 620px));
-  bottom:-82px;
-  width:min(590px,43vw);
-  height:125%;
+  z-index:1;
+  left:max(18px,calc(50% - 650px));
+  bottom:-110px;
+  width:min(520px,36vw);
+  height:auto;
+  opacity:.30;
   pointer-events:none;
-  background:url("https://raw.githubusercontent.com/collins0301/ScubaFirst/0527823243446e5a28d982fa709b8677b979de75/assets/kid-diver-bg.webp") center bottom / contain no-repeat;
-  opacity:.38;
-  filter:saturate(.95) contrast(.98);
+  user-select:none;
+  filter:saturate(.95) contrast(.96);
 }
-.youth-section>.container{position:relative;z-index:1}
+.youth-section>.container{position:relative;z-index:2}
+.youth-card{position:relative;z-index:3}
 @media (max-width:980px){
-  .youth-section::after{
-    left:-35px;
-    bottom:-58px;
-    width:420px;
-    max-width:54vw;
-    height:105%;
-    opacity:.28;
+  .youth-diver{
+    left:-30px;
+    bottom:-75px;
+    width:390px;
+    max-width:50vw;
+    opacity:.22;
   }
 }
 @media (max-width:760px){
-  .youth-section::after{
-    left:-90px;
-    bottom:-35px;
-    width:360px;
-    max-width:82vw;
-    height:88%;
-    opacity:.18;
+  .youth-diver{
+    left:-55px;
+    bottom:-40px;
+    width:275px;
+    max-width:64vw;
+    opacity:.16;
   }
 }
 
@@ -648,6 +647,7 @@ body{
     </section>
 
     <section class="youth-section section">
+      <img src="https://raw.githubusercontent.com/collins0301/ScubaFirst/0a4c0b20f81959e66d0aa03bfaf97f75118b22a2/assets/kid-diver-web.webp" alt="" class="youth-diver" aria-hidden="true">
       <div class="container youth-grid">
         <div>
           <p class="eyebrow">FUTURE DIVERS START HERE</p>
