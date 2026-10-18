@@ -239,7 +239,7 @@ h3{font-size:1.35rem;font-stretch:110%}
 /* Depth gauge: scroll-linked readout, desktop only */
 .gauge{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;align-items:center;gap:10px;pointer-events:none;mix-blend-mode:difference;color:#fff}
 .gauge-track{width:2px;height:180px;background:rgba(255,255,255,.35);position:relative}
-.gauge-fill{position:absolute;left:-3px;width:8px;height:8px;border-radius:50%;background:#fff;top:0}
+.gauge-fill{position:absolute;left:1px;top:0;width:36px;height:18px;transform:translate(-50%,-50%) rotate(-30deg);color:#fff}
 .gauge-read{font-stretch:75%;font-weight:800;font-size:.85rem;font-variant-numeric:tabular-nums;writing-mode:vertical-rl;transform:rotate(180deg)}
 
 /* Modals (unchanged behaviour) */
@@ -338,7 +338,14 @@ h3{font-size:1.35rem;font-stretch:110%}
   </header>
 
   <div class="gauge" aria-hidden="true">
-    <div class="gauge-track"><span class="gauge-fill"></span></div>
+    <div class="gauge-track"><svg class="gauge-fill" viewBox="0 0 40 20" fill="currentColor" aria-hidden="true">
+      <circle cx="5.4" cy="11" r="3.3"/>
+      <rect x="2.6" y="9.6" width="3.2" height="2.6" rx="1" fill-opacity=".55"/>
+      <rect x="9.5" y="4.2" width="12" height="4.2" rx="2"/>
+      <rect x="8.2" y="8.4" width="15.5" height="5.6" rx="2.8"/>
+      <path d="M22 9.6 L31 9.2 M22 12.6 L31 13" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M30.5 8.2 L39.2 5.8 L38.6 9.6 L30.5 10.6Z M30.5 11.8 L38.6 12.6 L39.2 16.4 L30.5 14Z"/>
+    </svg></div>
     <span class="gauge-read">0 ft</span>
   </div>
 
@@ -694,7 +701,7 @@ h3{font-size:1.35rem;font-stretch:110%}
       const max = document.documentElement.scrollHeight - innerHeight;
       const p = max > 0 ? Math.min(1, y / max) : 0;
       if (read) read.textContent = Math.round(p * 90) + ' ft';
-      if (dot) dot.style.top = (p * 172) + 'px';
+      if (dot) dot.style.top = (p * 180) + 'px';
     };
     addEventListener('scroll', onScroll, {passive:true});
     onScroll();
