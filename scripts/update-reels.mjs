@@ -4,7 +4,7 @@
 //   IG_ACCESS_TOKEN  – a long-lived Facebook Page access token with instagram_basic + instagram_manage_insights
 import { writeFile, readFile } from 'node:fs/promises';
 
-const API = process.env.GRAPH_API || 'https://graph.facebook.com/v21.0';
+const API = process.env.GRAPH_API || 'https://graph.facebook.com/v26.0';
 const TOP_N = Number(process.env.REELS_TOP_N || 3);
 const WINDOW_DAYS = Number(process.env.REELS_WINDOW_DAYS || 0); // 0 = all reels; e.g. 30 = only reels from the last 30 days
 const OUT = new URL('../data/reels.json', import.meta.url);
