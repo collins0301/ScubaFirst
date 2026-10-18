@@ -59,7 +59,16 @@ const scored = [];
 for (const r of reels) scored.push({ ...r, views: await views(r.id) });
 scored.sort((a, b) => b.views - a.views);
 
-const top = scored.slice(0, TOP_N).map(r => ({
+// Skip repeat uploads of the same video (same caption), keeping the one with more views.
+const seen = new Set();
+const unique = scored.filter(r => {
+  const key = (r.caption || r.id).trim().toLowerCase();
+  if (seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
+
+const top = unique.slice(0, TOP_N).map(r => ({
   permalink: r.permalink,
   caption: (r.caption || '').split('\n')[0].slice(0, 90),
   views: r.views,
