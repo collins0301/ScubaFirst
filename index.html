@@ -202,6 +202,8 @@ h3{font-size:1.35rem;font-stretch:110%}
 .video-embed{aspect-ratio:4/5;background:var(--deep)}
 .video-embed iframe{width:100%;height:100%;display:block}
 .video-meta{padding:14px 18px;color:var(--muted);font-size:.95rem}
+.video-embed.ig{aspect-ratio:auto;height:640px;background:#fff}
+.video-meta b{color:var(--deep)}
 
 /* FAQ */
 .faq-wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
@@ -548,7 +550,7 @@ h3{font-size:1.35rem;font-stretch:110%}
           </div>
         </div>
 
-        <div class="video-grid">
+        <div class="video-grid" id="video-grid">
           <article class="video-card">
             <div class="video-embed">
               <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1436970348304581%2F&show_text=false&width=500" title="Scuba First reel about Sand Hollow underwater landmarks" width="500" height="625" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
@@ -822,6 +824,24 @@ window.SCUBA_FIRST_CONFIG = {
   });
 })();
 
+  </script>
+  <script>
+  // Swaps the Facebook reels for the most-viewed Instagram reels once data/reels.json has them (updated daily by GitHub Actions).
+  (async () => {
+    const grid = document.getElementById('video-grid');
+    if (!grid) return;
+    try {
+      const res = await fetch('data/reels.json', {cache: 'no-store'});
+      if (!res.ok) return;
+      const {reels} = await res.json();
+      if (!Array.isArray(reels) || !reels.length) return;
+      const esc = t => String(t ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+      grid.innerHTML = reels.filter(r => /^https:\/\/www\.instagram\.com\//.test(r.permalink)).map(r => {
+        const src = r.permalink.replace(/\/?$/, '/') + 'embed';
+        return `<article class="video-card"><div class="video-embed ig"><iframe src="${esc(src)}" title="${esc(r.caption || 'Scuba First Instagram reel')}" width="400" height="640" style="border:none;overflow:hidden" scrolling="no" frameborder="0" loading="lazy" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div><div class="video-meta">${esc(r.caption || 'Watch on Instagram')}</div></article>`;
+      }).join('');
+    } catch { /* keep the Facebook reels */ }
+  })();
   </script>
   <script>
   // Fills in class dates, inclusions, instructors, phone and extra prices from SCUBA_FIRST_CONFIG.
