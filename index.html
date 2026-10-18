@@ -57,6 +57,7 @@ h3{font-size:1.35rem;font-stretch:110%}
 .depth::before{content:"";width:34px;height:2px;background:currentColor}
 .depth b{font-weight:900}
 .on-dark .depth{color:var(--surface)}
+.hero .depth{color:#fff}.hero .depth::before{background:var(--surface)}
 
 /* Buttons */
 .button{border:0;border-radius:6px;padding:15px 24px;font-weight:800;font-stretch:105%;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:background .15s ease}
@@ -112,7 +113,7 @@ h3{font-size:1.35rem;font-stretch:110%}
 .course-price{margin-top:auto;padding-top:10px;font-weight:700}
 .course-price b{font-size:1.35rem;font-stretch:115%;font-variant-numeric:tabular-nums;color:var(--deep)}
 .course-featured{grid-row:span 2;border-color:var(--mid);border-width:2px}
-.course-featured img{aspect-ratio:4/3.4}
+.course-featured img{flex:1;min-height:300px;aspect-ratio:auto;height:100%}
 .course-featured h3{font-size:2rem}
 .course-featured .button{align-self:flex-start;margin-top:8px}
 
@@ -312,7 +313,7 @@ h3{font-size:1.35rem;font-stretch:110%}
   </div>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero on-dark">
       <div class="container">
         <div>
           <p class="depth"><b>0 ft</b>&ensp;PADI and SDI training in Utah County</p>
@@ -416,7 +417,7 @@ h3{font-size:1.35rem;font-stretch:110%}
     <section class="instructors section" id="instructors" data-depth="30">
       <div class="container instructor-grid">
         <div class="instructor-photo">
-          <img src="https://images.unsplash.com/photo-1761145586519-12303065c348?auto=format&fit=crop&w=1100&q=70" alt="Diver in a wetsuit preparing a mask on a dive boat" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1758968571011-af0157c61d7b?auto=format&fit=crop&w=1100&q=70" alt="Diver ascending through bubbles over the sea floor" loading="lazy">
         </div>
         <div>
           <p class="depth"><b>30 ft</b>&ensp;Your instructors</p>
