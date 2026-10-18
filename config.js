@@ -1,14 +1,14 @@
 window.SCUBA_FIRST_CONFIG = {
   businessName: "Scuba First",
   domain: "https://goscubafirst.com",
-  facebookUrl: "https://www.facebook.com/profile.php?id=61592604832494",
+  facebookUrl: "https://www.facebook.com/scubafirst",
   instagramUrl: "https://www.instagram.com/scubafirst/",
 
   // Add these when you are ready. The site works without them, but inquiry/payment
   // buttons will route visitors to social messaging until the links are supplied.
   inquiryFormEndpoint: "https://formsubmit.co/ajax/russell.scubafirst@gmail.com",
-  phoneDisplay: "",
-  phoneLink: "",
+  phoneDisplay: "801-602-8184",
+  phoneLink: "tel:+18016028184",
   email: "russell.scubafirst@gmail.com",
 
   paymentLinks: {

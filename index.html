@@ -119,6 +119,29 @@ h3{font-size:1.35rem;font-stretch:110%}
 .course-featured h3{font-size:2rem}
 .course-featured .button{align-self:flex-start;margin-top:8px}
 
+/* Upcoming classes */
+.schedule{background:var(--foam);padding:72px 0}
+.schedule-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.class-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--deep)}
+.class-list li{display:grid;grid-template-columns:150px 1fr auto;gap:18px;align-items:center;padding:18px 0;border-bottom:1.5px solid var(--line)}
+.class-date{font-weight:900;font-stretch:115%;font-size:1.15rem;color:var(--deep);font-variant-numeric:tabular-nums}
+.class-info b{display:block}.class-info span{color:var(--muted);font-size:.95rem}
+.class-full{color:var(--muted);font-weight:700}
+.schedule-empty{border:1.5px dashed #9fb8c1;border-radius:10px;padding:26px;background:#fff}
+.schedule-empty p{margin:0 0 16px;color:var(--muted)}
+.included{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:6px}
+.included li{padding-left:24px;position:relative;color:var(--ink)}
+.included li::before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:6px;border-left:2.5px solid var(--mid);border-bottom:2.5px solid var(--mid);transform:rotate(-45deg)}
+.included-note{font-size:.9rem;color:var(--muted)}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0}
+.person{background:#fff;border:1.5px solid var(--line);border-radius:10px;overflow:hidden}
+.person img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.person div{padding:16px 18px}
+.person h3{font-size:1.15rem;margin:0 0 4px}
+.person .certs{font-weight:700;color:var(--mid);font-size:.9rem;margin:0 0 6px}
+.person p{margin:0;font-size:.95rem}
+[hidden]{display:none!important}
+
 /* Why: split photo */
 .why{background:var(--deep);color:#fff;padding:0}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;min-height:720px}
@@ -243,7 +266,7 @@ h3{font-size:1.35rem;font-stretch:110%}
   .hero .container,.instructor-grid,.youth-grid,.faq-wrap,.cta .container{grid-template-columns:1fr}
   .hero .container{gap:36px}.hero-card{max-width:520px}
   .course-grid{grid-template-columns:1fr 1fr}.course-featured{grid-column:1/-1;grid-row:auto}
-  .why-grid{grid-template-columns:1fr}.why-photo{min-height:340px}.why-copy{padding:72px 20px}
+  .why-grid{grid-template-columns:1fr}.schedule-grid{grid-template-columns:1fr;gap:28px}.why-photo{min-height:340px}.why-copy{padding:72px 20px}
   .steps-list{grid-template-columns:1fr 1fr;row-gap:28px}
   .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto}.mosaic figure{aspect-ratio:4/3}.mosaic figure:first-child{grid-column:1/-1;grid-row:auto;aspect-ratio:16/9}
   .video-grid{grid-template-columns:1fr}.video-card{max-width:520px;width:100%;margin:auto}
@@ -265,6 +288,7 @@ h3{font-size:1.35rem;font-stretch:110%}
   .course-grid,.steps-list,.footer-grid{grid-template-columns:1fr}
   .course-wide{grid-column:auto}.course-wide img{aspect-ratio:16/10}.course-featured img{min-height:0;aspect-ratio:16/11}
   .mosaic{grid-template-columns:1fr}.mosaic figure:first-child{aspect-ratio:4/3}
+  .class-list li{grid-template-columns:1fr;gap:6px}.people{grid-template-columns:1fr}
   .youth-diver{opacity:.15;max-width:70vw}
   .social-buttons{width:100%;display:grid;grid-template-columns:1fr 1fr}
   .legal{flex-direction:column}
@@ -283,7 +307,7 @@ h3{font-size:1.35rem;font-stretch:110%}
     "description": "PADI and SDI scuba instruction based in Payson, Utah, serving Utah County.",
     "areaServed": ["Payson, Utah", "Utah County, Utah"],
     "sameAs": [
-      "https://www.facebook.com/profile.php?id=61592604832494",
+      "https://www.facebook.com/scubafirst",
       "https://www.instagram.com/scubafirst/"
     ]
   }
@@ -301,6 +325,7 @@ h3{font-size:1.35rem;font-stretch:110%}
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">
         <a href="#courses">Classes</a>
+        <a href="#dates">Dates</a>
         <a href="#why">Why us</a>
         <a href="#instructors">Instructors</a>
         <a href="#faq">FAQ</a>
@@ -362,6 +387,8 @@ h3{font-size:1.35rem;font-stretch:110%}
               <span class="course-tag">Start here</span>
               <h3>Open Water</h3>
               <p>Become a certified scuba diver. Learn your equipment, buoyancy, underwater skills, dive planning and safety, plus the confidence to keep diving after class.</p>
+              <ul class="included" id="ow-included" hidden aria-label="Included in Open Water"></ul>
+              <p class="included-note" id="ow-bring" hidden></p>
               <div class="course-price">PADI <b data-price="padiOpenWater">$525</b>&emsp;SDI <b data-price="sdiOpenWater">$500</b></div>
               <button class="button button-primary js-open-enroll" data-course="Open Water">Start Open Water</button>
             </div>
@@ -373,6 +400,7 @@ h3{font-size:1.35rem;font-stretch:110%}
               <span class="course-tag">You're certified. Go further.</span>
               <h3>Advanced</h3>
               <p>Build experience, sharpen your skills and try new kinds of diving, like deep and navigation.</p>
+              <div class="course-price" data-price-wrap="advanced" hidden>From <b data-price="advanced"></b></div>
               <button class="text-link js-open-enroll" data-course="Advanced">Explore Advanced</button>
             </div>
           </article>
@@ -383,6 +411,7 @@ h3{font-size:1.35rem;font-stretch:110%}
               <span class="course-tag">Be the buddy everyone wants</span>
               <h3>Rescue</h3>
               <p>Spot problems before they become emergencies and know exactly how to respond when they do.</p>
+              <div class="course-price" data-price-wrap="rescue" hidden>From <b data-price="rescue"></b></div>
               <button class="text-link js-open-enroll" data-course="Rescue">Train for Rescue</button>
             </div>
           </article>
@@ -396,6 +425,22 @@ h3{font-size:1.35rem;font-stretch:110%}
               <button class="text-link js-open-enroll" data-course="Master Diver">Build my dive path</button>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule" id="dates" aria-labelledby="dates-title">
+      <div class="container schedule-grid">
+        <div>
+          <h2 id="dates-title" style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Upcoming classes</h2>
+          <p class="lead">Classes stay small, so spots are limited. Reserve early, or ask about a private schedule.</p>
+        </div>
+        <div>
+          <ul class="class-list" id="class-list" hidden></ul>
+          <div class="schedule-empty" id="class-empty">
+            <p>Class dates are posted here as they're scheduled. Send us your name and we'll email you the next Open Water dates.</p>
+            <button class="button button-primary js-open-info" data-course="Open Water">Email me the next dates</button>
+          </div>
         </div>
       </div>
     </section>
@@ -427,6 +472,7 @@ h3{font-size:1.35rem;font-stretch:110%}
           <h2>Taught by divers who love diving.</h2>
           <p class="lead">Scuba First is a local Utah County dive training company. Both instructors are cross-certified with PADI and SDI.</p>
           <p>You're not signing up with a giant dive operation. You'll know who is teaching you before you ever get in the water, and your instructor will know exactly what you're working on.</p>
+          <div class="people" id="people" hidden></div>
           <div class="cred"><span>PADI instructor</span><span>SDI instructor</span><span>Payson, Utah</span></div>
           <button class="button button-primary js-open-info">Ask about training</button>
         </div>
@@ -548,7 +594,7 @@ h3{font-size:1.35rem;font-stretch:110%}
           <p class="depth"><b>90 ft</b>&ensp;Ready when you are</p>
           <h2>The hardest part is deciding to start.</h2>
           <p>You don't need your own gear. You don't need experience. You just need to be ready for your first breath underwater.</p>
-          <p class="contact-line">Email <a href="mailto:russell.scubafirst@gmail.com">russell.scubafirst@gmail.com</a> or message us on <a data-social="instagram" href="#">Instagram</a> or <a data-social="facebook" href="#">Facebook</a>.</p>
+          <p class="contact-line"><span data-phone-wrap hidden>Call or text <a data-phone href="#"></a>. </span>Email <a href="mailto:russell.scubafirst@gmail.com">russell.scubafirst@gmail.com</a> or message us on <a data-social="instagram" href="#">Instagram</a> or <a data-social="facebook" href="#">Facebook</a>.</p>
         </div>
         <div class="cta-actions">
           <button class="button button-primary js-open-enroll">Start my certification</button>
@@ -574,6 +620,7 @@ h3{font-size:1.35rem;font-stretch:110%}
       </div>
       <div>
         <strong>Contact</strong>
+        <a data-phone data-phone-wrap href="#" hidden></a>
         <a href="mailto:russell.scubafirst@gmail.com">Email us</a>
         <a href="#contact" class="js-open-info">Send a question</a>
       </div>
@@ -593,8 +640,8 @@ h3{font-size:1.35rem;font-stretch:110%}
       <div class="signup-options">
         <button type="button" class="signup-option js-pay" data-payment="padiOpenWater"><span><b>Open Water, PADI</b><small>Entry-level certification</small></span><strong data-price="padiOpenWater">$525</strong></button>
         <button type="button" class="signup-option js-pay" data-payment="sdiOpenWater"><span><b>Open Water, SDI</b><small>Entry-level certification</small></span><strong data-price="sdiOpenWater">$500</strong></button>
-        <button type="button" class="signup-option js-pay" data-payment="advanced"><span><b>Advanced</b><small>Continue your training</small></span><strong>Ask for price</strong></button>
-        <button type="button" class="signup-option js-pay" data-payment="rescue"><span><b>Rescue</b><small>Awareness and response skills</small></span><strong>Ask for price</strong></button>
+        <button type="button" class="signup-option js-pay" data-payment="advanced"><span><b>Advanced</b><small>Continue your training</small></span><strong data-price="advanced">Ask for price</strong></button>
+        <button type="button" class="signup-option js-pay" data-payment="rescue"><span><b>Rescue</b><small>Awareness and response skills</small></span><strong data-price="rescue">Ask for price</strong></button>
         <button type="button" class="signup-option js-pay" data-payment="masterDiver"><span><b>Master Diver path</b><small>Plan your next level</small></span><strong>Ask for price</strong></button>
       </div>
       <p class="modal-note" id="payment-note"></p>
@@ -655,14 +702,14 @@ h3{font-size:1.35rem;font-stretch:110%}
 window.SCUBA_FIRST_CONFIG = {
   businessName: "Scuba First",
   domain: "https://goscubafirst.com",
-  facebookUrl: "https://www.facebook.com/profile.php?id=61592604832494",
+  facebookUrl: "https://www.facebook.com/scubafirst",
   instagramUrl: "https://www.instagram.com/scubafirst/",
 
   // Add these when you are ready. The site works without them, but inquiry/payment
   // buttons will route visitors to social messaging until the links are supplied.
   inquiryFormEndpoint: "https://formsubmit.co/ajax/russell.scubafirst@gmail.com",
-  phoneDisplay: "",
-  phoneLink: "",
+  phoneDisplay: "801-602-8184",
+  phoneLink: "tel:+18016028184",
   email: "russell.scubafirst@gmail.com",
 
   paymentLinks: {
@@ -675,8 +722,26 @@ window.SCUBA_FIRST_CONFIG = {
 
   pricing: {
     padiOpenWater: "$525",
-    sdiOpenWater: "$500"
-  }
+    sdiOpenWater: "$500",
+    advanced: "",   // e.g. "$350" — leave "" to show "Ask for price"
+    rescue: ""
+  },
+
+  // ===== EDIT BELOW TO UPDATE THE SITE. Empty lists keep that section hidden. =====
+
+  // Upcoming classes. Example:
+  // { course: "Open Water", dates: "Nov 8 – Nov 16", detail: "Sat mornings · Spanish Fork pool", spots: 4 }
+  // spots: number left, 0 shows "Full", leave out to hide.
+  classes: [],
+
+  // What the Open Water price includes, one line each. Example: "Online academics (eLearning)"
+  openWaterIncludes: [],
+  // What students bring themselves. Example: "Students bring their own mask, fins, snorkel and boots."
+  openWaterBring: "",
+
+  // Instructors. Example:
+  // { name: "Russell Collins", certs: "PADI Open Water Scuba Instructor · SDI Instructor", bio: "One line.", photo: "assets/russell.jpg" }
+  instructors: []
 };
 
   </script>
@@ -757,6 +822,51 @@ window.SCUBA_FIRST_CONFIG = {
   });
 })();
 
+  </script>
+  <script>
+  // Fills in class dates, inclusions, instructors, phone and extra prices from SCUBA_FIRST_CONFIG.
+  (() => {
+    const cfg = window.SCUBA_FIRST_CONFIG || {};
+    const esc = t => String(t ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+    const classes = cfg.classes || [];
+    const list = document.getElementById('class-list');
+    if (classes.length && list) {
+      list.innerHTML = classes.map(c => {
+        const full = c.spots === 0;
+        const spots = typeof c.spots === 'number' && !full ? ` · ${c.spots} spot${c.spots === 1 ? '' : 's'} left` : '';
+        const action = full
+          ? '<span class="class-full">Full</span>'
+          : `<button class="button button-primary js-open-enroll">Reserve</button>`;
+        return `<li><span class="class-date">${esc(c.dates)}</span><span class="class-info"><b>${esc(c.course)}</b><span>${esc(c.detail)}${spots}</span></span>${action}</li>`;
+      }).join('');
+      list.hidden = false;
+      document.getElementById('class-empty').hidden = true;
+      list.querySelectorAll('.js-open-enroll').forEach(b => b.addEventListener('click', () => document.getElementById('enroll-modal').showModal()));
+    }
+
+    const inc = cfg.openWaterIncludes || [];
+    const incEl = document.getElementById('ow-included');
+    if (inc.length && incEl) { incEl.innerHTML = inc.map(i => `<li>${esc(i)}</li>`).join(''); incEl.hidden = false; }
+    const bring = document.getElementById('ow-bring');
+    if (cfg.openWaterBring && bring) { bring.textContent = cfg.openWaterBring; bring.hidden = false; }
+
+    ['advanced','rescue'].forEach(k => {
+      if (cfg.pricing?.[k]) document.querySelectorAll(`[data-price-wrap="${k}"]`).forEach(el => el.hidden = false);
+    });
+
+    if (cfg.phoneDisplay && cfg.phoneLink) {
+      document.querySelectorAll('[data-phone]').forEach(a => { a.textContent = cfg.phoneDisplay; a.href = cfg.phoneLink; });
+      document.querySelectorAll('[data-phone-wrap]').forEach(el => el.hidden = false);
+    }
+
+    const people = cfg.instructors || [];
+    const pe = document.getElementById('people');
+    if (people.length && pe) {
+      pe.innerHTML = people.map(p => `<article class="person">${p.photo ? `<img src="${esc(p.photo)}" alt="${esc(p.name)}, Scuba First instructor" loading="lazy">` : ''}<div><h3>${esc(p.name)}</h3><p class="certs">${esc(p.certs)}</p><p>${esc(p.bio)}</p></div></article>`).join('');
+      pe.hidden = false;
+    }
+  })();
   </script>
 </body>
 </html>
