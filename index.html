@@ -115,6 +115,7 @@ h3{font-size:1.35rem;font-stretch:110%}
 .course-featured{grid-row:span 2;border-color:var(--mid);border-width:2px}
 .course-featured img{flex:1;min-height:300px;aspect-ratio:auto;height:100%}
 .course-featured .course-body{flex:0 0 auto}
+.course-wide{grid-column:span 2}.course-wide img{aspect-ratio:21/8}
 .course-featured h3{font-size:2rem}
 .course-featured .button{align-self:flex-start;margin-top:8px}
 
@@ -262,6 +263,7 @@ h3{font-size:1.35rem;font-stretch:110%}
   .hero-actions{display:grid}.hero-actions .button{width:100%}
   .section{padding:72px 0}
   .course-grid,.steps-list,.footer-grid{grid-template-columns:1fr}
+  .course-wide{grid-column:auto}.course-wide img{aspect-ratio:16/10}.course-featured img{min-height:0;aspect-ratio:16/11}
   .mosaic{grid-template-columns:1fr}.mosaic figure:first-child{aspect-ratio:4/3}
   .youth-diver{opacity:.15;max-width:70vw}
   .social-buttons{width:100%;display:grid;grid-template-columns:1fr 1fr}
@@ -385,8 +387,8 @@ h3{font-size:1.35rem;font-stretch:110%}
             </div>
           </article>
 
-          <article class="course" style="grid-column:span 2">
-            <img src="https://images.unsplash.com/photo-1586508577428-120d6b072945?auto=format&fit=crop&w=1200&q=70" alt="Diver gliding over a coral reef surrounded by fish" loading="lazy" style="aspect-ratio:21/8">
+          <article class="course course-wide">
+            <img src="https://images.unsplash.com/photo-1586508577428-120d6b072945?auto=format&fit=crop&w=1200&q=70" alt="Diver gliding over a coral reef surrounded by fish" loading="lazy">
             <div class="course-body">
               <span class="course-tag">Keep going</span>
               <h3>Master Diver path</h3>
