@@ -41,7 +41,34 @@
   <g clip-path="url(#inner)">
     <rect x="100" y="100" width="1000" height="1000" fill="#F3EBDD"/>
     <!-- sun -->
-    <circle cx="760" cy="205" r="40" fill="#F2B544"/>
+    <circle cx="792" cy="198" r="34" fill="#F2B544"/>
+    <!-- dive boat at the surface (drawn before the wave so the water covers its waterline) -->
+    <g>
+      <!-- bimini canopy -->
+      <rect x="516" y="160" width="118" height="7" rx="3" fill="#0B2238"/>
+      <path d="M528,167 L528,190 M622,167 L622,190" stroke="#0B2238" stroke-width="4"/>
+      <!-- cabin -->
+      <path d="M512,232 L512,196 Q512,188 520,188 L640,188 L670,232 Z" fill="#0B2238"/>
+      <rect x="524" y="200" width="26" height="14" rx="3" fill="#F3EBDD"/>
+      <rect x="558" y="200" width="26" height="14" rx="3" fill="#F3EBDD"/>
+      <path d="M592,200 L634,200 L646,214 L592,214 Z" fill="#F3EBDD"/>
+      <!-- tank rack on the stern deck -->
+      <g fill="#F2B544">
+        <rect x="458" y="206" width="9" height="26" rx="4.5"/>
+        <rect x="471" y="206" width="9" height="26" rx="4.5"/>
+        <rect x="484" y="206" width="9" height="26" rx="4.5"/>
+        <rect x="497" y="206" width="9" height="26" rx="4.5"/>
+      </g>
+      <!-- stern dive flag -->
+      <path d="M442,232 L442,168" stroke="#0B2238" stroke-width="4"/>
+      <rect x="444" y="168" width="40" height="28" fill="#D7342B"/>
+      <polygon points="444,168 452,168 484,190 484,196 476,196 444,174" fill="#FFFFFF"/>
+      <!-- hull -->
+      <path d="M426,230 L718,230 L744,218 L714,262 Q704,274 682,274 L434,274 Z" fill="#0B2238"/>
+      <path d="M430,240 L724,240 L720,246 L430,246 Z" fill="#D7342B"/>
+      <!-- swim ladder -->
+      <path d="M420,236 L420,276 M412,236 L412,276 M412,248 L420,248 M412,260 L420,260" stroke="#0B2238" stroke-width="3"/>
+    </g>
     <!-- Gen I band (surface) with wave top -->
     <path d="M100,262 C160,242 220,242 280,262 S400,282 460,262 S580,242 640,262 S760,282 820,262 S940,242 1000,262 S1080,282 1100,262 L1100,1100 L100,1100 Z" fill="#3FA7B5"/>
     <!-- divers descending behind the names (shade shifts with depth) -->
