@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 400 300" width="4in" height="3in">
+<style>.s{font-family:Cinzel;font-weight:700}</style>
+<g id="text" inkscape:groupmode="layer" inkscape:label="Text">
+  <text class="s" x="200" y="62" font-size="34" fill="#EFE6D2" text-anchor="middle" letter-spacing="3">THE</text>
+  <text class="s" x="200" y="128" font-size="62" fill="#EFE6D2" text-anchor="middle" letter-spacing="2">JACKSON</text>
+  <text class="s" x="200" y="180" font-size="40" fill="#EFE6D2" text-anchor="middle" letter-spacing="2">DIVE FAMILY</text>
+</g>
+<g id="rules" inkscape:groupmode="layer" inkscape:label="Lines">
+  <path d="M110,50 L150,50 M250,50 L290,50" stroke="#EFE6D2" stroke-width="4"/>
+  <path d="M70,222 L160,222 M240,222 L330,222" stroke="#EFE6D2" stroke-width="4"/>
+</g>
+<g id="flag" inkscape:groupmode="layer" inkscape:label="Dive Flag">
+  <rect x="170" y="201" width="60" height="42" fill="#C9352B" stroke="#EFE6D2" stroke-width="3"/>
+  <polygon points="171.5,202.5 182,202.5 228.5,234 228.5,241.5 218,241.5 171.5,210" fill="#EFE6D2"/>
+</g>
+</svg>
