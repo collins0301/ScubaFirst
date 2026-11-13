@@ -37,13 +37,13 @@
   <path d="M286,832 L314,832 L320,856 L280,856 Z" fill="#F3EBDD"/>
 
   <!-- depth tags on the line -->
-  <g class="lab" font-size="20" text-anchor="middle">
-    <rect x="272" y="338" width="56" height="36" rx="6" fill="#0B2238"/>
-    <text x="300" y="363" fill="#F3EBDD">I</text>
-    <rect x="272" y="520" width="56" height="36" rx="6" fill="#0B2238"/>
-    <text x="300" y="545" fill="#F3EBDD">II</text>
-    <rect x="272" y="718" width="56" height="36" rx="6" fill="#F3EBDD"/>
-    <text x="300" y="743" fill="#0B2238">III</text>
+  <g class="lab" font-size="17" letter-spacing="3" text-anchor="middle">
+    <rect x="246" y="338" width="108" height="36" rx="6" fill="#0B2238"/>
+    <text x="300" y="362" fill="#F3EBDD">I ATA</text>
+    <rect x="246" y="520" width="108" height="36" rx="6" fill="#0B2238"/>
+    <text x="300" y="544" fill="#F3EBDD">II ATA</text>
+    <rect x="246" y="718" width="108" height="36" rx="6" fill="#F3EBDD"/>
+    <text x="300" y="742" fill="#0B2238">III ATA</text>
   </g>
 
   <!-- names -->
@@ -52,11 +52,11 @@
     <text class="head" x="645" y="378" font-size="54">DAVE &amp; SUSAN</text>
 
     <text class="lab" x="645" y="496" font-size="15" fill="#BFE6EC" letter-spacing="4">GENERATION II · CERTIFIED INTO THE FAMILY</text>
-    <text class="head" x="645" y="550" font-size="44" letter-spacing="3">AMBER &amp; [YOUR NAME]</text>
+    <text class="head" x="655" y="550" font-size="46" letter-spacing="3">AMBER &amp; RUSSELL</text>
     <text class="lab" x="645" y="592" font-size="17" fill="#BFE6EC" letter-spacing="3">ERIN · BRENNA · COLTON · CAITLYN</text>
 
     <text class="lab" x="660" y="694" font-size="15" fill="#7FC6D1" letter-spacing="4">GENERATION III · STILL DESCENDING</text>
-    <text class="head" x="660" y="746" font-size="38" letter-spacing="3">RALEIGH · CHASE · CARTER</text>
+    <text class="head" x="668" y="746" font-size="37" letter-spacing="3">RALEIGH · CHASE · CARTER</text>
   </g>
 
   <!-- bubble trail rising from the deep to the surface (bigger as they rise) -->
