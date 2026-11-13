@@ -9,6 +9,21 @@
       .lab{font-family:'Inter',Arial,sans-serif;font-weight:700;letter-spacing:5px}
       .mem{font-family:'Bitstream Charter',Georgia,serif;font-style:italic}
     </style>
+    <g id="diver">
+      <g fill="#6FBCCB" stroke="#6FBCCB" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M68,22 C52,20 40,15 26,11" fill="none" stroke-width="9"/>
+        <path d="M68,29 C52,31 40,35 28,38" fill="none" stroke-width="9"/>
+        <path d="M28,7 L-10,-6 L-6,12 L26,15 Z" stroke-width="3"/>
+        <path d="M30,34 L-4,34 L-6,52 L30,42 Z" stroke-width="3"/>
+        <ellipse cx="95" cy="26" rx="34" ry="11" stroke="none"/>
+        <rect x="74" y="8" width="44" height="10" rx="5" stroke="none"/>
+        <path d="M118,13 L124,13" stroke-width="4"/>
+        <path d="M124,13 C134,6 150,10 152,28" fill="none" stroke-width="2"/>
+        <path d="M122,31 C134,40 146,40 160,36" fill="none" stroke-width="7"/>
+        <circle cx="141" cy="23" r="10" stroke="none"/>
+      </g>
+      <rect x="143" y="16" width="9" height="7" rx="2" fill="#0E3557"/>
+    </g>
   </defs>
 
   <!-- ===== Inside the badge: three depth bands = three generations ===== -->
@@ -59,11 +74,16 @@
     <text class="head" x="668" y="746" font-size="37" letter-spacing="3">RALEIGH · CHASE · CARTER</text>
   </g>
 
+  <!-- two divers swimming in the deep -->
+  <use href="#diver" transform="translate(440,800) scale(0.95)"/>
+  <use href="#diver" transform="translate(690,826) scale(0.8)"/>
+
   <!-- bubble trail rising from the deep to the surface (bigger as they rise) -->
   <g fill="none" stroke="#FFFFFF" stroke-width="4">
-    <circle cx="885" cy="872" r="6"/>
-    <circle cx="902" cy="838" r="7"/>
-    <circle cx="890" cy="802" r="8"/>
+    <circle cx="830" cy="828" r="4"/>
+    <circle cx="852" cy="806" r="5"/>
+    <circle cx="878" cy="786" r="6"/>
+    <circle cx="915" cy="766" r="7"/>
     <circle cx="950" cy="692" r="9"/>
     <circle cx="966" cy="645" r="10"/>
     <circle cx="952" cy="596" r="11"/>
