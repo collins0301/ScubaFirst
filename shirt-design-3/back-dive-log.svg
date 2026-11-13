@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" width="1200" height="1560">
+<defs><style>
+.tw{font-family:'Liberation Mono','JetBrains Mono',monospace;font-weight:700}
+.twr{font-family:'Liberation Mono','JetBrains Mono',monospace;font-weight:400}
+.pen{font-family:'Liberation Serif',Caladea,Georgia,serif;font-style:italic;font-weight:700}
+.penr{font-family:'Liberation Serif',Caladea,Georgia,serif;font-style:italic}
+.st{font-family:Inter,Arial,sans-serif;font-weight:900;letter-spacing:4px}
+</style>
+<path id="sealTop" d="M -112,0 A 112 112 0 0 1 112,0"/>
+<path id="sealBot" d="M -128,0 A 128 128 0 0 0 128,0"/>
+</defs>
+<g transform="rotate(-1.5 600 780)">
+<mask id="holes"><rect x="0" y="0" width="1200" height="1560" fill="#fff"/><circle cx="148" cy="150" r="11" fill="#000"/><circle cx="148" cy="330" r="11" fill="#000"/><circle cx="148" cy="510" r="11" fill="#000"/><circle cx="148" cy="690" r="11" fill="#000"/><circle cx="148" cy="870" r="11" fill="#000"/><circle cx="148" cy="1050" r="11" fill="#000"/><circle cx="148" cy="1230" r="11" fill="#000"/><circle cx="148" cy="1410" r="11" fill="#000"/></mask>
+<g mask="url(#holes)">
+<rect x="132" y="70" width="936" height="1400" rx="6" fill="#E2D3B3"/>
+<rect x="120" y="58" width="936" height="1400" rx="6" fill="#F1E6CF"/>
+<rect x="120" y="58" width="56" height="1400" fill="#E2D3B3"/>
+</g>
+<text class="tw" x="610" y="150" font-size="28" fill="#4E8C8A" text-anchor="middle" letter-spacing="10">OFFICIAL DIVE LOG</text>
+<text class="tw" x="610" y="236" font-size="66" fill="#1E3A5F" text-anchor="middle" letter-spacing="2">THE JACKSON FAMILY</text>
+<path d="M210,268 L1010,268 M210,276 L1010,276" stroke="#1E3A5F" stroke-width="3"/>
+<text class="twr" x="610" y="312" font-size="20" fill="#1E3A5F" text-anchor="middle" letter-spacing="2">VOLUMES I – III  ·  THREE GENERATIONS  ·  ONE FAMILY</text>
+<rect x="210" y="360" width="800" height="280" fill="none" stroke="#1E3A5F" stroke-width="3"/>
+<rect x="210" y="360" width="150" height="280" fill="#1E3A5F"/>
+<text class="tw" x="285" y="410" font-size="16" fill="#F1E6CF" text-anchor="middle" letter-spacing="2">DIVE No.</text>
+<text class="tw" x="285" y="476" font-size="58" fill="#F1E6CF" text-anchor="middle" >001</text>
+<text class="tw" x="285" y="510" font-size="13" fill="#9FC2C1" text-anchor="middle" letter-spacing="2">GENERATION</text>
+<text class="tw" x="285" y="550" font-size="34" fill="#9FC2C1" text-anchor="middle" >I</text>
+<path d="M210,568 L360,568" stroke="#F1E6CF" stroke-width="2" opacity=".5"/>
+<text class="tw" x="285" y="594" font-size="11" fill="#9FC2C1" text-anchor="middle" letter-spacing="2">MAX DEPTH</text>
+<text class="tw" x="285" y="618" font-size="13" fill="#F1E6CF" text-anchor="middle" >WHERE IT BEGAN</text>
+<text class="tw" x="385" y="404" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="3">DIVERS</text>
+<text class="pen" x="385" y="460" font-size="50" fill="#1E3A5F" text-anchor="start" >Dave &amp; Susan</text>
+<path d="M385,474 L985,474" stroke="#BFD0D6" stroke-width="3"/>
+<text class="tw" x="385" y="536" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="3">NOTES</text>
+<path d="M490,546 L985,546" stroke="#BFD0D6" stroke-width="2"/>
+<text class="penr" x="490" y="540" font-size="24" fill="#1E3A5F" text-anchor="start" >Took the first giant stride.</text>
+<path d="M490,586 L985,586" stroke="#BFD0D6" stroke-width="2"/>
+<text class="penr" x="490" y="580" font-size="24" fill="#1E3A5F" text-anchor="start" >Got all five kids certified.</text>
+<text class="tw" x="385" y="618" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="2">BOTTOM TIME:</text>
+<text class="tw" x="540" y="618" font-size="18" fill="#1E3A5F" text-anchor="start" >A LIFETIME</text>
+<g transform="rotate(-8 900 592)" opacity="0.9"><rect x="792.0" y="566" width="216" height="52" rx="6" fill="none" stroke="#C8432F" stroke-width="5"/><rect x="798.0" y="572" width="204" height="40" rx="3" fill="none" stroke="#C8432F" stroke-width="2"/>
+<text class="st" x="900" y="602" font-size="26" fill="#C8432F" text-anchor="middle" >FOUNDERS</text>
+</g>
+<rect x="210" y="660" width="800" height="280" fill="none" stroke="#1E3A5F" stroke-width="3"/>
+<rect x="210" y="660" width="150" height="280" fill="#1E3A5F"/>
+<text class="tw" x="285" y="710" font-size="16" fill="#F1E6CF" text-anchor="middle" letter-spacing="2">DIVE No.</text>
+<text class="tw" x="285" y="776" font-size="58" fill="#F1E6CF" text-anchor="middle" >002</text>
+<text class="tw" x="285" y="810" font-size="13" fill="#9FC2C1" text-anchor="middle" letter-spacing="2">GENERATION</text>
+<text class="tw" x="285" y="850" font-size="34" fill="#9FC2C1" text-anchor="middle" >II</text>
+<path d="M210,868 L360,868" stroke="#F1E6CF" stroke-width="2" opacity=".5"/>
+<text class="tw" x="285" y="894" font-size="11" fill="#9FC2C1" text-anchor="middle" letter-spacing="2">MAX DEPTH</text>
+<text class="tw" x="285" y="918" font-size="13" fill="#F1E6CF" text-anchor="middle" >DEEPER</text>
+<text class="tw" x="385" y="704" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="3">DIVERS</text>
+<text class="pen" x="385" y="760" font-size="50" fill="#1E3A5F" text-anchor="start" >Amber &amp; Russell</text>
+<path d="M385,774 L985,774" stroke="#BFD0D6" stroke-width="3"/>
+<text class="penr" x="385" y="804" font-size="19" fill="#1E3A5F" text-anchor="start" >also certified: Erin · Brenna · Colton · Caitlyn</text>
+<text class="tw" x="385" y="836" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="3">NOTES</text>
+<path d="M490,846 L985,846" stroke="#BFD0D6" stroke-width="2"/>
+<text class="penr" x="490" y="840" font-size="24" fill="#1E3A5F" text-anchor="start" >Russell got certified to join the family,</text>
+<path d="M490,886 L985,886" stroke="#BFD0D6" stroke-width="2"/>
+<text class="penr" x="490" y="880" font-size="24" fill="#1E3A5F" text-anchor="start" >then became the instructor.</text>
+<text class="tw" x="385" y="918" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="2">BOTTOM TIME:</text>
+<text class="tw" x="540" y="918" font-size="18" fill="#1E3A5F" text-anchor="start" >EVERY YEAR</text>
+<g transform="rotate(6 900 892)" opacity="0.9"><rect x="781.0" y="866" width="238" height="52" rx="6" fill="none" stroke="#C8432F" stroke-width="5"/><rect x="787.0" y="872" width="226" height="40" rx="3" fill="none" stroke="#C8432F" stroke-width="2"/>
+<text class="st" x="900" y="902" font-size="26" fill="#C8432F" text-anchor="middle" >CERTIFIED</text>
+</g>
+<rect x="210" y="960" width="800" height="280" fill="none" stroke="#1E3A5F" stroke-width="3"/>
+<rect x="210" y="960" width="150" height="280" fill="#1E3A5F"/>
+<text class="tw" x="285" y="1010" font-size="16" fill="#F1E6CF" text-anchor="middle" letter-spacing="2">DIVE No.</text>
+<text class="tw" x="285" y="1076" font-size="58" fill="#F1E6CF" text-anchor="middle" >003</text>
+<text class="tw" x="285" y="1110" font-size="13" fill="#9FC2C1" text-anchor="middle" letter-spacing="2">GENERATION</text>
+<text class="tw" x="285" y="1150" font-size="34" fill="#9FC2C1" text-anchor="middle" >III</text>
+<path d="M210,1168 L360,1168" stroke="#F1E6CF" stroke-width="2" opacity=".5"/>
+<text class="tw" x="285" y="1194" font-size="11" fill="#9FC2C1" text-anchor="middle" letter-spacing="2">MAX DEPTH</text>
+<text class="tw" x="285" y="1218" font-size="13" fill="#F1E6CF" text-anchor="middle" >DEEPEST YET</text>
+<text class="tw" x="385" y="1004" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="3">DIVERS</text>
+<text class="pen" x="385" y="1060" font-size="50" fill="#1E3A5F" text-anchor="start" >Raleigh · Chase · Carter</text>
+<path d="M385,1074 L985,1074" stroke="#BFD0D6" stroke-width="3"/>
+<text class="tw" x="385" y="1136" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="3">NOTES</text>
+<path d="M490,1146 L985,1146" stroke="#BFD0D6" stroke-width="2"/>
+<text class="penr" x="490" y="1140" font-size="24" fill="#1E3A5F" text-anchor="start" >Certified by Dad.</text>
+<path d="M490,1186 L985,1186" stroke="#BFD0D6" stroke-width="2"/>
+<text class="penr" x="490" y="1180" font-size="24" fill="#1E3A5F" text-anchor="start" >Still logging dives.</text>
+<text class="tw" x="385" y="1218" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="2">BOTTOM TIME:</text>
+<text class="tw" x="540" y="1218" font-size="18" fill="#1E3A5F" text-anchor="start" >JUST STARTING</text>
+<g transform="rotate(-5 900 1192)" opacity="0.9"><rect x="792.0" y="1166" width="216" height="52" rx="6" fill="none" stroke="#C8432F" stroke-width="5"/><rect x="798.0" y="1172" width="204" height="40" rx="3" fill="none" stroke="#C8432F" stroke-width="2"/>
+<text class="st" x="900" y="1202" font-size="26" fill="#C8432F" text-anchor="middle" >NEXT GEN</text>
+</g>
+<text class="tw" x="210" y="1290" font-size="15" fill="#4E8C8A" text-anchor="start" letter-spacing="3">VERIFIED BY</text>
+<text class="pen" x="210" y="1352" font-size="56" fill="#1E3A5F" text-anchor="start" >Dave Jackson</text>
+<path d="M210,1368 L640,1368" stroke="#1E3A5F" stroke-width="2"/>
+<text class="tw" x="210" y="1396" font-size="15" fill="#1E3A5F" text-anchor="start" letter-spacing="1">FIRST DIVER OF THE FAMILY · IN LOVING MEMORY</text>
+</g>
+<g transform="translate(910,1360) rotate(-12) scale(0.78)">
+<circle r="150" fill="none" stroke="#C8432F" stroke-width="7"/><circle r="92" fill="none" stroke="#C8432F" stroke-width="3"/><circle r="140" fill="none" stroke="#C8432F" stroke-width="2"/>
+<text class="st" font-size="22" fill="#C8432F"><textPath href="#sealTop" startOffset="50%" text-anchor="middle">EVERY DIVE WE LOG</textPath></text>
+<text class="st" font-size="22" fill="#C8432F"><textPath href="#sealBot" startOffset="50%" text-anchor="middle">IS PART OF HIS</textPath></text>
+<g transform="translate(0,6)"><path d="M-54,-22 Q-54,-32 -40,-32 L40,-32 Q54,-32 54,-22 L54,4 Q54,20 34,20 L14,20 Q8,8 0,8 Q-8,8 -14,20 L-34,20 Q-54,20 -54,4 Z" fill="#C8432F"/><path d="M-44,-22 L-8,-22 L-8,2 Q-8,10 -16,11 L-34,11 Q-44,11 -44,2 Z" fill="#F1E6CF"/><path d="M44,-22 L8,-22 L8,2 Q8,10 16,11 L34,11 Q44,11 44,2 Z" fill="#F1E6CF"/><path d="M62,-56 L62,22 Q62,38 46,38 L30,38" stroke="#C8432F" stroke-width="8" fill="none" stroke-linecap="round"/></g>
+<circle r="91" fill="none"/>
+</g>
+</svg>

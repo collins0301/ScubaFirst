@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-170 -170 340 340" width="340" height="340">
+  <!-- Left-chest rubber-stamp seal -->
+  <defs>
+    <style>.st{font-family:Inter,Arial,sans-serif;font-weight:900;letter-spacing:4px}</style>
+    <path id="t" d="M -112,0 A 112 112 0 0 1 112,0"/>
+    <path id="b" d="M -130,0 A 130 130 0 0 0 130,0"/>
+  </defs>
+  <g transform="rotate(-8)">
+    <circle r="150" fill="none" stroke="#C8432F" stroke-width="8"/>
+    <circle r="140" fill="none" stroke="#C8432F" stroke-width="2"/>
+    <circle r="92" fill="none" stroke="#C8432F" stroke-width="3"/>
+    <text class="st" font-size="25" fill="#C8432F"><textPath href="#t" startOffset="50%" text-anchor="middle">JACKSON FAMILY</textPath></text>
+    <text class="st" font-size="22" fill="#C8432F"><textPath href="#b" startOffset="50%" text-anchor="middle">DIVE LOG · VOL. I–III</textPath></text>
+    <g transform="translate(-4,6)">
+      <path d="M-54,-22 Q-54,-32 -40,-32 L40,-32 Q54,-32 54,-22 L54,4 Q54,20 34,20 L14,20 Q8,8 0,8 Q-8,8 -14,20 L-34,20 Q-54,20 -54,4 Z" fill="#C8432F"/>
+      <path d="M-44,-22 L-8,-22 L-8,2 Q-8,10 -16,11 L-34,11 Q-44,11 -44,2 Z" fill="#F1E6CF"/>
+      <path d="M44,-22 L8,-22 L8,2 Q8,10 16,11 L34,11 Q44,11 44,2 Z" fill="#F1E6CF"/>
+      <path d="M62,-56 L62,22 Q62,38 46,38 L30,38" stroke="#C8432F" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
