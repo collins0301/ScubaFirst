@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Left-chest mark: a three-tip coral sprig growing from one root -->
+  <defs><style>
+    .w{font-family:Inter,Arial,sans-serif;font-weight:800;letter-spacing:6px}
+    .s{font-family:'Bitstream Charter',Georgia,serif;font-style:italic}
+  </style></defs>
+  <g fill="none" stroke="#F2735A" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200,290 Q198,250 200,215" stroke-width="30"/>
+    <path d="M200,220 Q198,170 200,110" stroke-width="18"/>
+    <path d="M200,222 Q160,190 130,135" stroke-width="16"/>
+    <path d="M200,222 Q240,190 270,135" stroke-width="16"/>
+    <path d="M200,262 Q150,252 115,210" stroke-width="11"/>
+    <path d="M200,262 Q250,252 285,210" stroke-width="11"/>
+  </g>
+  <g fill="#F2735A"><circle cx="200" cy="108" r="13"/><circle cx="129" cy="132" r="12"/><circle cx="271" cy="132" r="12"/></g>
+  <path d="M110,298 C160,286 240,286 290,298" stroke="#F4E3C3" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text class="w" x="200" y="345" font-size="30" fill="#F4E3C3" text-anchor="middle">JACKSON</text>
+  <text class="s" x="200" y="380" font-size="22" fill="#8ED6C8" text-anchor="middle">planted by Dave &amp; Susan</text>
+</svg>
