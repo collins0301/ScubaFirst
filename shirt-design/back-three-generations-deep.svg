@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1320" width="1200" height="1320">
+  <!-- Jackson Family Dive Legacy — back print. Flat colors for screen print / DTG. -->
+  <defs>
+    <clipPath id="inner"><circle cx="600" cy="560" r="440"/></clipPath>
+    <path id="arcTop" d="M 143,560 A 457 457 0 0 1 1057,560"/>
+    <path id="arcBot" d="M 117,560 A 483 483 0 0 0 1083,560"/>
+    <style>
+      .head{font-family:'Inter Display','Inter',Arial,sans-serif;font-weight:900;letter-spacing:4px}
+      .lab{font-family:'Inter',Arial,sans-serif;font-weight:700;letter-spacing:5px}
+      .mem{font-family:'Bitstream Charter',Georgia,serif;font-style:italic}
+    </style>
+  </defs>
+
+  <!-- ===== Inside the badge: three depth bands = three generations ===== -->
+  <g clip-path="url(#inner)">
+    <rect x="100" y="100" width="1000" height="1000" fill="#F3EBDD"/>
+    <!-- sun -->
+    <circle cx="760" cy="205" r="40" fill="#F2B544"/>
+    <!-- Gen I band (surface) with wave top -->
+    <path d="M100,262 C160,242 220,242 280,262 S400,282 460,262 S580,242 640,262 S760,282 820,262 S940,242 1000,262 S1080,282 1100,262 L1100,1100 L100,1100 Z" fill="#3FA7B5"/>
+    <!-- Gen II band -->
+    <path d="M100,440 C200,428 300,452 400,440 S600,428 700,440 S900,452 1100,440 L1100,1100 L100,1100 Z" fill="#1F6F8B"/>
+    <!-- Gen III band (deepest) -->
+    <path d="M100,640 C200,628 300,652 400,640 S600,628 700,640 S900,652 1100,640 L1100,1100 L100,1100 Z" fill="#0E3557"/>
+    <!-- reef at the bottom -->
+    <path d="M100,1000 L100,930 C150,925 170,890 205,905 C230,860 260,870 275,900 C300,880 330,895 340,925 C400,915 430,940 470,935
+             C520,900 560,915 580,940 C640,935 700,945 760,930 C790,880 830,890 840,925 C880,870 920,880 930,915 C980,905 1040,920 1100,925 L1100,1000 Z" fill="#081F33"/>
+    <!-- kelp -->
+    <path d="M330,930 C315,880 345,850 330,800 C318,760 342,735 335,700" stroke="#081F33" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M352,930 C365,890 340,860 356,820 C368,790 350,770 360,745" stroke="#081F33" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- dive buoy at the surface; its descent line = the family line -->
+  <line x1="300" y1="262" x2="300" y2="832" stroke="#F3EBDD" stroke-width="5"/>
+  <ellipse cx="300" cy="264" rx="26" ry="13" fill="#D7342B"/>
+  <path d="M276,260 L292,252 L324,268 L310,276 Z" fill="#FFFFFF"/>
+  <path d="M286,832 L314,832 L320,856 L280,856 Z" fill="#F3EBDD"/>
+
+  <!-- depth tags on the line -->
+  <g class="lab" font-size="20" text-anchor="middle">
+    <rect x="272" y="338" width="56" height="36" rx="6" fill="#0B2238"/>
+    <text x="300" y="363" fill="#F3EBDD">I</text>
+    <rect x="272" y="520" width="56" height="36" rx="6" fill="#0B2238"/>
+    <text x="300" y="545" fill="#F3EBDD">II</text>
+    <rect x="272" y="718" width="56" height="36" rx="6" fill="#F3EBDD"/>
+    <text x="300" y="743" fill="#0B2238">III</text>
+  </g>
+
+  <!-- names -->
+  <g text-anchor="middle" fill="#FFFFFF">
+    <text class="lab" x="645" y="322" font-size="16" fill="#0B2238" opacity="0.85">GENERATION I · WHERE IT BEGAN</text>
+    <text class="head" x="645" y="378" font-size="54">DAVE &amp; SUSAN</text>
+
+    <text class="lab" x="645" y="496" font-size="15" fill="#BFE6EC" letter-spacing="4">GENERATION II · CERTIFIED INTO THE FAMILY</text>
+    <text class="head" x="645" y="550" font-size="44" letter-spacing="3">AMBER &amp; [YOUR NAME]</text>
+    <text class="lab" x="645" y="592" font-size="17" fill="#BFE6EC" letter-spacing="3">ERIN · BRENNA · COLTON · CAITLYN</text>
+
+    <text class="lab" x="660" y="694" font-size="15" fill="#7FC6D1" letter-spacing="4">GENERATION III · STILL DESCENDING</text>
+    <text class="head" x="660" y="746" font-size="38" letter-spacing="3">RALEIGH · CHASE · CARTER</text>
+  </g>
+
+  <!-- bubble trail rising from the deep to the surface (bigger as they rise) -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="4">
+    <circle cx="885" cy="872" r="6"/>
+    <circle cx="902" cy="838" r="7"/>
+    <circle cx="890" cy="802" r="8"/>
+    <circle cx="950" cy="692" r="9"/>
+    <circle cx="966" cy="645" r="10"/>
+    <circle cx="952" cy="596" r="11"/>
+    <circle cx="972" cy="522" r="12"/>
+    <circle cx="958" cy="462" r="12"/>
+    <circle cx="966" cy="404" r="13"/>
+    <circle cx="946" cy="348" r="14"/>
+  </g>
+
+  <!-- ===== Outer ring ===== -->
+  <circle cx="600" cy="560" r="470" fill="none" stroke="#0B2238" stroke-width="60"/>
+  <circle cx="600" cy="560" r="440" fill="none" stroke="#F3EBDD" stroke-width="4"/>
+  <g class="head" font-size="36" fill="#F3EBDD" letter-spacing="9">
+    <text><textPath href="#arcTop" startOffset="50%" text-anchor="middle">THREE GENERATIONS DEEP</textPath></text>
+    <text><textPath href="#arcBot" startOffset="50%" text-anchor="middle">THE JACKSON DIVE FAMILY</textPath></text>
+  </g>
+  <!-- side dive flags on the ring -->
+  <g>
+    <rect x="113" y="545" width="38" height="28" fill="#D7342B"/>
+    <polygon points="113,545 121,545 151,566 151,573 143,573 113,552" fill="#FFFFFF"/>
+    <rect x="1049" y="545" width="38" height="28" fill="#D7342B"/>
+    <polygon points="1049,545 1057,545 1087,566 1087,573 1079,573 1049,552" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ===== Memorial line ===== -->
+  <g text-anchor="middle">
+    <text class="lab" x="600" y="1110" font-size="24" fill="#0B2238" letter-spacing="6">IN LOVING MEMORY OF DAVE JACKSON</text>
+    <text class="mem" x="600" y="1160" font-size="34" fill="#0B2238">He took the first breath. We&#8217;re still following his bubbles.</text>
+  </g>
+</svg>

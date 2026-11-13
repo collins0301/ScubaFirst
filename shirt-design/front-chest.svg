@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Left-chest print: dive flag with the family line on the stripe -->
+  <defs>
+    <clipPath id="flag"><rect x="20" y="20" width="360" height="230" rx="14"/></clipPath>
+    <style>.h{font-family:'Inter Display','Inter',Arial,sans-serif;font-weight:900}.l{font-family:'Inter',Arial,sans-serif;font-weight:700}</style>
+  </defs>
+  <g clip-path="url(#flag)">
+    <rect x="20" y="20" width="360" height="230" fill="#D7342B"/>
+    <polygon points="20,20 92,20 380,206 380,250 308,250 20,64" fill="#FFFFFF"/>
+  </g>
+  <rect x="20" y="20" width="360" height="230" rx="14" fill="none" stroke="#0B2238" stroke-width="8"/>
+  <g transform="rotate(32.9 200 135)" text-anchor="middle">
+    <text class="h" x="200" y="146" font-size="30" fill="#0B2238" letter-spacing="2">JACKSON DIVERS</text>
+  </g>
+  <text class="l" x="40" y="232" font-size="15" fill="#FFFFFF" letter-spacing="2">EST. DAVE &amp; SUSAN</text>
+  <text class="l" x="360" y="50" font-size="16" fill="#FFFFFF" letter-spacing="2" text-anchor="end">I · II · III</text>
+</svg>
