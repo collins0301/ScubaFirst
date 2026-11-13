@@ -125,20 +125,20 @@
 <text class="ring" font-size="48" fill="#EFE6D2"><textPath href="#ringArc" startOffset="50%" text-anchor="middle">THREE GENERATIONS DEEP</textPath></text>
 </g>
 <g id="generation-text" inkscape:groupmode="layer" inkscape:label="Generation Text">
-<text class="lab" x="662" y="392" font-size="21" fill="#EFE6D2" text-anchor="middle">GENERATION I · WHERE IT BEGAN</text>
-<text class="name" x="662" y="466" font-size="60" fill="#EFE6D2" text-anchor="middle">DAVE &amp; SUSAN</text>
-<path d="M624,498 L700,498" stroke="#EFE6D2" stroke-width="3"/>
-<rect x="226" y="436" width="92" height="32" fill="none" stroke="#EFE6D2" stroke-width="2.4"/>
-<text class="tag" x="272" y="459" font-size="19" fill="#EFE6D2" text-anchor="middle">I ATA</text>
-<text class="lab" x="662" y="560" font-size="21" fill="#EFE6D2" text-anchor="middle">GENERATION II · THE JACKSON FAMILY</text>
-<text class="name" x="662" y="632" font-size="57" fill="#EFE6D2" text-anchor="middle">AMBER &amp; RUSSELL</text>
-<text class="sib" x="662" y="674" font-size="26" fill="#EFE6D2" text-anchor="middle">ERIN · BRENNA · COLTON · CAITLYN</text>
-<rect x="226" y="604" width="92" height="32" fill="none" stroke="#EFE6D2" stroke-width="2.4"/>
-<text class="tag" x="272" y="627" font-size="19" fill="#EFE6D2" text-anchor="middle">II ATA</text>
-<text class="lab" x="662" y="748" font-size="21" fill="#EFE6D2" text-anchor="middle">GENERATION III · STILL DESCENDING</text>
-<text class="name" x="662" y="806" font-size="41" fill="#EFE6D2" text-anchor="middle">RALEIGH · CHASE · CARTER</text>
-<rect x="226" y="776" width="92" height="32" fill="none" stroke="#EFE6D2" stroke-width="2.4"/>
-<text class="tag" x="272" y="799" font-size="19" fill="#EFE6D2" text-anchor="middle">III ATA</text>
+<text class="lab" x="668" y="392" font-size="21" fill="#EFE6D2" text-anchor="middle">GENERATION I · WHERE IT BEGAN</text>
+<text class="name" x="668" y="466" font-size="60" fill="#EFE6D2" text-anchor="middle">DAVE &amp; SUSAN</text>
+<path d="M630,498 L706,498" stroke="#EFE6D2" stroke-width="3"/>
+<rect x="188" y="436" width="84" height="32" fill="none" stroke="#EFE6D2" stroke-width="2.4"/>
+<text class="tag" x="230" y="459" font-size="19" fill="#EFE6D2" text-anchor="middle">I ATA</text>
+<text class="lab" x="668" y="560" font-size="21" fill="#EFE6D2" text-anchor="middle">GENERATION II · THE JACKSON FAMILY</text>
+<text class="name" x="668" y="642" font-size="66" font-weight="800" fill="#EFE6D2" text-anchor="middle">(AMBER &amp; RUSSELL)</text>
+<text class="sib" x="648" y="684" font-size="23" fill="#EFE6D2" text-anchor="middle" letter-spacing="2">(ERIN &amp; ABE) · (BRENNA &amp; MATT) · COLTON · CAITLYN</text>
+<rect x="188" y="608" width="84" height="32" fill="none" stroke="#EFE6D2" stroke-width="2.4"/>
+<text class="tag" x="230" y="631" font-size="19" fill="#EFE6D2" text-anchor="middle">II ATA</text>
+<text class="lab" x="668" y="748" font-size="21" fill="#EFE6D2" text-anchor="middle">GENERATION III · STILL DESCENDING</text>
+<text class="name" x="668" y="806" font-size="41" fill="#EFE6D2" text-anchor="middle">RALEIGH · CHASE · CARTER</text>
+<rect x="188" y="776" width="84" height="32" fill="none" stroke="#EFE6D2" stroke-width="2.4"/>
+<text class="tag" x="230" y="799" font-size="19" fill="#EFE6D2" text-anchor="middle">III ATA</text>
 </g>
 <g id="memorial-text" inkscape:groupmode="layer" inkscape:label="Memorial Text">
 <path d="M150,1262 L228,1262 M972,1262 L1050,1262" stroke="#EFE6D2" stroke-width="3"/>
