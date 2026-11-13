@@ -13,7 +13,8 @@
 
 - The PNG files are ready to print as-is (transparent background).
 - The PDF and SVG files are vector, with live text, if the shop wants to adjust anything.
-- The SVG files open in Adobe Illustrator, Inkscape, or Affinity Designer. Each part is on its own named layer: Sky, Water, Light Rays, Surface Waves, Dive Boat, Reef Background, Reef Foreground, Diver, Bubbles, Print Texture, Ring, Ring Text, Generation Text, Memorial Text.
+- The SVG files open in Adobe Illustrator, Inkscape, or Affinity Designer. Layers: **Scene Artwork** (the realistic underwater scene, linked from `scene-artwork.png`; keep it in the same folder), **Ring**, **Ring Text**, **Generation Text**, **Memorial Text**. All text is live and editable.
+- `scene-artwork.png` is the underwater scene alone (2820 × 2820 px, transparent outside the circle). To use a sharper version later, replace this file with one of the same name.
 - **Fonts:** the `fonts/` folder includes Montserrat, Cinzel and Libre Baskerville. All are free Google fonts under the SIL Open Font License. Install them before editing the SVG, or the text will substitute a different font.
 
 ## Colors
@@ -21,9 +22,8 @@
 | Use | Hex |
 |---|---|
 | Cream (all text, ring) | `#EFE6D2` |
-| Dark navy (boat, diver, reef silhouettes) | `#0E2238` |
 | Dive-flag red | `#C9352B` |
-| Water | gradient from `#3A9DB6` (surface) to `#0C3352` (bottom) |
+| Scene | full-color artwork (`scene-artwork.png`) |
 
 ## Placement
 
